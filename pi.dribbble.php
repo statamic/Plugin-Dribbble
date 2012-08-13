@@ -3,7 +3,7 @@ class Plugin_dribbble extends Plugin {
 
     var $meta = array(
         'name'       => 'Dribbble',
-        'version'    => '0.9',
+        'version'    => '1.0',
         'author'     => 'Jack McDade',
         'author_url' => 'http://jackmcdade.com'
     );
