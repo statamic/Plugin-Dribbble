@@ -146,3 +146,9 @@ The Dribbble list you wish you request shots from.
 **Default:** 5
 
 Limit the number of shots returned.
+
+## Tag Pair: *API*
+
+This is a complete freestyle tag pair. Format and request your own endpoint, receive all the data as Statamic variables. You'll want to use the [Dribbble API](http://dribbble.com/api) for this. Just one parameter: `request`.
+
+    {{ dribbble:api request="your/request/here" }} {{ /dribbble:api }}

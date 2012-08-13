@@ -33,7 +33,8 @@ class Plugin_dribbble extends Plugin {
         return false;
     }
 
-    public function lists() {
+    public function lists()
+    {
         $limit  = $this->fetch_param('limit', 5, 'is_numeric');
         $list = $this->fetch_param('list', 'everyone');
 
@@ -41,6 +42,19 @@ class Plugin_dribbble extends Plugin {
 
         if ($response = $this->dribbble_curl($params)) {
             return object_to_array($response);
+        }
+
+        return false;
+    }
+
+    public function api()
+    {
+        $params = $this->fetch_param('request', false);
+
+        if ($params) {
+            if ($response = $this->dribbble_curl($params)) {
+                return object_to_array($response);
+            }            
         }
 
         return false;
