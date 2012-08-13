@@ -144,3 +144,5 @@ The Dribbble list you wish you request shots from.
 
 #### Limit `limit`
 **Default:** 5
+
+Limit the number of shots returned.
