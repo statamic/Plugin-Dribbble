@@ -56,7 +56,7 @@ The following single variables are available inside the `{{ dribbble:players }}`
 - `{{ rebounds_received_count }}`
 - `{{ created_at }}`
 
-## Tag Pair: *Shots*
+## Tag Pair: *:Shots*
 
 **Example Tag**
 
@@ -95,13 +95,13 @@ This tag returns a lot of goodness. This plugin will always return the full API 
 
 *Note that this is an implementation of the `GET /players:id/shots` endpoint, and not `GET /shots/:id`, as you might assume by looking at the API docs*
 
-#### Variable Pair: *Player*
+#### Variable Pair: *:Player*
 
 {{ player }} {{ /player }}
 
-Same as the `{{ dribbble:player }}` tag pair, but inside this particular request.
+Same as the [`{{ dribbble:player }}`](#tag-pair-player) tag pair, but inside this particular request.
 
-#### Variable Pair: *Shots*
+#### Variable Pair: *:Shots*
 
     {{ shots }} {{ /shots }}
 
@@ -122,7 +122,9 @@ Same as the `{{ dribbble:player }}` tag pair, but inside this particular request
 
 ## Tag Pair *List*
 
-This tag is exactly like `{{ dribbble:shots }}`, except it lets you fetch from a list (such as *debuts* or *everyone*) instead of a player.
+This tag is exactly like [`{{ dribbble:shots }}`](#tag-pair-shots), except it lets you fetch from a list (such as *debuts* or *everyone*) instead of a player.
+
+    {{ dribbble:list list="popular" }} {{ /dribbble:list }}
 
 
 ### Parameters
