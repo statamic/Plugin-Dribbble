@@ -1,4 +1,4 @@
-Statamic Dribbble Plugin
+Statamic Dribbble Plugin ![Statamic v1](https://img.shields.io/badge/statamic-v1-lightgrey.svg?style=flat-square)
 ================================
 
 The Dribbble plugin is used for fetching and displaying information from Dribbble's API, including players, shots, and lists.
